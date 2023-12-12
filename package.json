@@ -4,7 +4,11 @@
   "description": "A KV Azure Manager NPM Package.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "kvm": "./bin/index.js"
   },
   "keywords": [],
   "author": "",
