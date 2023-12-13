@@ -1,5 +1,1 @@
-module.exports = {
-    init: () => {
-        console.log('Initializing KVM...');
-    }
-}
+module.exports = () => {}
