@@ -19,6 +19,15 @@ yargs
         handler: () => init(),
     })
     .command({
+        command: 'sync',
+        describe: "Initializes KVM module",
+    })
+    .command({
+        command: 'create:config:file',
+        describe: "Initializes KVM module",
+        aliases: ['c:c:f']
+    })
+    .command({
         command: 'secret:get:all',
         describe: "Retrieve all secrets",
         aliases: ['s:g:a'],
@@ -66,6 +75,10 @@ yargs
         describe: "Remove all secrets from Azure KV for good.",
         aliases: ['s:r:a'],
         handler: () => secrets.removeAll(),
+    })
+    .command({
+        command: 'reset',
+        describe: "Removes all configs and reset KVM module",
     })
     .alias('v', 'version')
     .alias('h', 'help')
